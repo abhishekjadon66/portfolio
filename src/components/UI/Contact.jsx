@@ -11,9 +11,9 @@ const Contact = () => {
                             title="google-maps"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7006.3210393656445!2d77.34185319300353!3d28.594960902740777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5092bdc47f3%3A0xd9c143500ee61f96!2sSector%2022%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1690137154073!5m2!1sen!2sin"
                             className="border-0 w-full h-full"
-                            allowfullscreen=""
+                            allowFullScreen=""
                             loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
+                            referrerPolicy="no-referrer-when-downgrade"
                         ></iframe>
                     </div>
 
