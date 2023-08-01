@@ -59,7 +59,7 @@ const Footer = () => {
 
                                 <div className="leading-[20px]">
                                     <h2 className="text-gray-200 font-[500] text-[18px] ">Abhishek</h2>
-                                    <p className='text-gray-400 text-[14px] font-[500]'>Jadon</p>
+                                    <p className='text-gray-400 text-[14px] font-[500]'>Personal</p>
                                 </div>
                             </div>
                         </div>
