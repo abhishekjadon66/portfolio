@@ -65,7 +65,7 @@ const Footer = () => {
                         </div>
 
                         <div>
-                            <p className='text-gray-400 text-[14px] '>&copy;Copyright {year} developed by Abhishek Personal  - All right reserved.</p>
+                            <p className='text-gray-400 text-[14px] '>&copy;Copyright {year} developed by Abhishek Jadon  - All right reserved.</p>
                         </div>
                     </div>
                 </div>
