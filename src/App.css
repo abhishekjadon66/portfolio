@@ -26,6 +26,7 @@ section {
 }
 
 .sticky__header {
+  position: sticky;
   width: 100%;
   height: 80px;
   line-height: 80px;
@@ -35,34 +36,3 @@ section {
   box-shadow: 3px 3px -8px 3px #ddd;
   z-index: 99;
 }
-
-@media only screen and (max-width: 600px) {
-  .menu {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 20px;
-    left: -10px;
-    background: #00000084;
-    z-index: 100;
-    display: none;
-  }
-
-  .menu ul {
-    width: 30rem;
-    height: 30%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 200;
-    background: #ffffff;
-    flex-direction: column;
-    line-height: 10px;
-    justify-content: start;
-    align-items: center;
-  }
-
-  .show__menu {
-    display: block;
-  }
-} 
