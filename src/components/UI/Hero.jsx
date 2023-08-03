@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import heroImg from "../../assets/images/abhishek1.jpg";
 import CountUp from "react-countup";
+import Resume from "../Resume/Resume";
+import Popup from "../Resume/Resume";
 const Hero = () => {
+    const [resume, setResume] = useState(false)
+
+    const showResume = () => {
+        setTimeout(() => {
+            setResume(true)
+        }, 2000);
+    }
     return (
         <section className="pt-0 " id="about">
             <div className="container pt-14">
@@ -29,11 +38,12 @@ const Hero = () => {
                             data-aos-delay="200"
                             className="flex items-center gap-6 mt-7"
                         >
-                            <a target="blank" href="">
-                                <button className="bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]">
-                                    <i class="ri-mail-line"></i>Hire me
-                                </button>
-                            </a>
+
+                            <button onClick={showResume} className="bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]">
+                                <i class="ri-mail-line"></i>Hire me
+                            </button>
+
+
                             <a
                                 href="#portfolio"
                                 className="text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor"
@@ -153,8 +163,15 @@ const Hero = () => {
                         </div>
                     </div>
                     {/* ===============hero content end==================== */}
+
                 </div>
             </div>
+
+            <Popup trigger={resume} setTrigger={setResume}>
+                <Resume />
+            </Popup>
+
+
         </section>
     );
 };
