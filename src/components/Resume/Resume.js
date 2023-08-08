@@ -13,7 +13,7 @@ const PopUp = (props) => {
             className="bg-white drop-shadow-2xl md:min-h-[50vh] min-w-full rounded-xl"
           >
             <span className="absolute md:top-2 md:left-2 text-gray-600 md:text-lg text-sm">
-              <a href="Abhishek.pdf" download="Abhishek_jadon_resume.pdf">
+              <a href="Abhishek.pdf" download="Abhishek.pdf">
                 <button
                   onClick={() => props.setTrigger(false)}
                   className="bg-blue-500 shadow-lg hover:bg-blue-900 focus:bg-blue-300 rounded-lg uppercase text-black md:text-base  md:px-2 px-0  border-0 outline-none"
