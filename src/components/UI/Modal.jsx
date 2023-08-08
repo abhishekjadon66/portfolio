@@ -4,7 +4,7 @@ import portfolios from '../../assets/data/portfolios'
 const Modal = ({ activeID, setShowModal }) => {
     const portfolio = portfolios.find(portfolio => portfolio.id === activeID)
     return (
-        <div className='flex justify-center items-center w-full h-full fixed top-0 left-0 z-10 bg-headingColor bg-opacity-40'>
+        <div className='flex justify-center items-center w-full h-full fixed top-0 md:left-0 z-10 left-[-34px] bg-headingColor bg-opacity-40'>
 
             <div className="w-[80%] md:max-w-[600px] absolute md:w-full z-20 bg-white rounded-[8px] p-5">
                 <div>
@@ -27,7 +27,7 @@ const Modal = ({ activeID, setShowModal }) => {
                         }
                     </div>
 
-                    <a href={portfolio.siteUrl}>
+                    <a target='_blank' rel="noreferrer" href={portfolio.siteUrl}>
                         <button className='bg-primaryColor text-white py-2 px-4 my-8 rounded-[8px] font-[500] hover:bg-headingColor ease-in duration-300'>Live Site</button>
                     </a>
                 </div>

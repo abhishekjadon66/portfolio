@@ -1,6 +1,14 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import Resume from "../Resume/Resume";
+import Popup from "../Resume/Resume";
 const Footer = () => {
+    const [resume, setResume] = useState(false)
+
+    const showResume = () => {
+        setTimeout(() => {
+            setResume(true)
+        }, 1000);
+    }
     const year = new Date().getFullYear()
     return (
         <footer className='bg-[#12141e] pt-12'>
@@ -13,8 +21,8 @@ const Footer = () => {
                             Do you want to make beautiful products?
                         </h2>
 
-                        <a href="#contact">
-                            <button className='bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]'><i class="ri-mail-line"></i>Hire me</button>
+                        <a>
+                            <button onClick={showResume} className='bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]'><i class="ri-mail-line"></i>Hire me</button>
                         </a>
                     </div>
 
@@ -71,7 +79,9 @@ const Footer = () => {
                 </div>
             </div>
             {/* ==========footer bottom end========== */}
-
+            <Popup trigger={resume} setTrigger={setResume}>
+                <Resume />
+            </Popup>
         </footer>
     )
 }

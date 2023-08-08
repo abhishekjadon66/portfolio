@@ -5,18 +5,18 @@ import React from "react";
 const PopUp = (props) => {
   return props.trigger ? (
     <>
-      <div className="popup w-full h-48 overflow-auto touch-auto relative z-10">
-        <div className="md:w-[50%] w-96 relative top-44">
+      <div className="popup overflow-auto touch-auto relative z-10">
+        <div className="md:w-[50%] w-[22rem] relative md:top-36  pb-11 pt-20 top-72 right-9 md:right-0">
           <div
             data-aos="zoom-in-up"
             data-aos-duration="1500"
             className="bg-white drop-shadow-2xl md:min-h-[50vh] min-w-full rounded-xl"
           >
-            <span className="absolute top-2 left-2 text-gray-600 text-lg">
+            <span className="absolute md:top-2 md:left-2 text-gray-600 md:text-lg text-sm">
               <a href="Abhishek.pdf" download="Abhishek.pdf">
                 <button
                   onClick={() => props.setTrigger(false)}
-                  className="bg-blue-500 shadow-lg hover:bg-blue-900 focus:bg-blue-300 rounded-lg uppercase text-black text-base px-2 border-0 outline-none"
+                  className="bg-blue-500 shadow-lg hover:bg-blue-900 focus:bg-blue-300 rounded-lg uppercase text-black md:text-base  md:px-2 px-0  border-0 outline-none"
                 >
                   <i class="ri-arrow-down-circle-line"></i>
                   <span>Resume</span>
@@ -55,17 +55,6 @@ const PopUp = (props) => {
                   </p>
                   <p className="flex mt-1 leading-3 tracking-tight text-justify text-gray-700">
                     {" "}
-                    <span className="text-[10px]">
-                      <GoDotFill />
-                    </span>
-                    <span className="text-[12px]">
-                      Performed a pivotal role in research and testing to
-                      enhance the performance of existing systems, resulting in
-                      a remarkable 33% improvement in system efficiency.
-                    </span>
-                  </p>
-
-                  <p className="flex mt-1 leading-3 tracking-tight text-justify text-gray-700">
                     <span className="text-[10px]">
                       <GoDotFill />
                     </span>
@@ -361,7 +350,7 @@ const PopUp = (props) => {
               </div>
 
               {/* Section this social links */}
-              <div className="flex items-center mt-8 gap-72 ml-10">
+              <div className="flex items-center justify-between flex-wrap mt-5 md:ml-20">
                 <span>
                   <a
                     target="_blank"
@@ -374,7 +363,7 @@ const PopUp = (props) => {
                   </a>
                 </span>
 
-                <span>
+                <span className="ml-28">
                   <a
                     target="_blank"
                     rel="noreferrer"

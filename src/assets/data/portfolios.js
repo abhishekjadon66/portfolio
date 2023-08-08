@@ -1,4 +1,4 @@
-import portfolioImg01 from "../images/portfolio-01.jpg";
+import portfolioImg01 from "../images/portfolio.png";
 import portfolioImg02 from "../images/portfolio-02.jpg";
 import portfolioImg03 from "../images/portfolio-03.jpg";
 import portfolioImg04 from "../images/portfolio-04.jpg";
@@ -11,11 +11,18 @@ const portfolios = [
     id: "01",
     imgUrl: portfolioImg01,
     category: "Web Design",
-    title: "Finance Technology Website",
+    title: "My Portfolio",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
-    technologies: ["React", "Tailwind css", "Node.js", "MongoDB"],
-    siteUrl: "#",
+      "Here are the details of the skills I mentioned: HTML, CSS, Javascript, ES6, React.js, Next.js, Tailwind css, Git, Github",
+    technologies: [
+      "React",
+      "Tailwind css",
+      "React-icons",
+      "Javascript",
+      "HTML",
+      "CSS",
+    ],
+    siteUrl: "https://abhishekjadon66.github.io/portfolio/",
   },
   {
     id: "02",

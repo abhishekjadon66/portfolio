@@ -131,7 +131,7 @@ const Hero = () => {
                                 <CountUp start={0} end={1} duration={5} suffix="+" />
                             </h2>
                             <h4 className="text-headingColor font-[600] text-[18px]">
-                                Years of Experience
+                                (Years of Experience with 6 months included internship)
                             </h4>
                         </div>
 
@@ -146,16 +146,24 @@ const Hero = () => {
 
                         <div className="mb-10">
                             <h2 className="text-headingColor font-[700] text-[32px]">
-                                <CountUp start={0} end={3} duration={5} suffix="+" />
+                                <CountUp start={0} end={2} duration={3} suffix="+" />
                             </h2>
                             <h4 className="text-headingColor font-[600] text-[18px]">
                                 Company are worked
                             </h4>
                         </div>
+                        <div className="mb-10">
+                            <h2 className="text-headingColor font-[700] text-[32px]">
+                                <CountUp start={0} end={1} duration={3} suffix="+" />
+                            </h2>
+                            <h4 className="text-headingColor font-[600] text-[18px]">
+                                I am currently working on this SODE in this company
+                            </h4>
+                        </div>
 
                         <div className="mb-10">
                             <h2 className="text-headingColor font-[700] text-[32px]">
-                                <CountUp start={0} end={5} duration={5} suffix="+" />
+                                <CountUp start={0} end={3} duration={5} suffix="+" />
                             </h2>
                             <h4 className="text-headingColor font-[600] text-[18px]">
                                 Projects Completed
